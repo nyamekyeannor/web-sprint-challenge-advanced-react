@@ -25,10 +25,10 @@ test("form shows success message on submit with form details", async () => {
   const submitButton = screen.getByRole("button", { name: /checkout/i });
 
   fireEvent.change(firstNameInput, {
-    target: { name: "firstName", value: "nyamekye" },
+    target: { name: "firstName", value: "tom" },
   });
   fireEvent.change(lastNameInput, {
-    target: { name: "lastName", value: "Annor" },
+    target: { name: "lastName", value: "banker" },
   });
   fireEvent.change(addressInput, {
     target: { name: "address", value: "911 alpha " },
